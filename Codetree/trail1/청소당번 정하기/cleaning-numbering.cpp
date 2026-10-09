@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int cnt2 = 0, cnt3 = 0, cnt12 = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 12 == 0)
+        {
+            cnt12++;
+            continue;
+        }
+        else if (i % 3 == 0)
+        {
+            cnt3++;
+            continue;
+        }
+        else if (i % 2 == 0)
+        {
+            cnt2++;
+            continue;
+        }
+    }
+    cout << cnt2 << ' ' << cnt3 << ' ' << cnt12;
+    return 0;
+}
